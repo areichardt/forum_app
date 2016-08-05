@@ -1,0 +1,10 @@
+#posts
+  - @posts.each do |post|
+    .posts
+      %h2.title= @post.title
+      %p.date
+       Published at
+        = time_ago_in_words(post.created_at)
+        by 
+        = posts.user
+
